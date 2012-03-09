@@ -7,6 +7,9 @@ rvm:
   - rbx
   - ree
 
+notifications:
+  email: false
+
 branches:
   only:
     - master
