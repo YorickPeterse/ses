@@ -1,0 +1,12 @@
+script: 'rvm gemset import .gems; bacon spec/ses/*.rb'
+
+rvm:
+  - 1.8.7
+  - 1.9.2
+  - 1.9.3
+  - rbx
+  - ree
+
+branches:
+  only:
+    - master

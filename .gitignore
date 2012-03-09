@@ -1,0 +1,5 @@
+# Ignore build related files
+doc
+pkg/*.gem
+
+!.gitkeep
