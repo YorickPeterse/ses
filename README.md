@@ -2,9 +2,12 @@
 
 SES is a very simple and easy to use Gem for sending Emails using the Amazon SES
 API. While there are already quite a few Gems out there for using this API most
-of them had a dependency on the rather bloated "Mail" library. This particular
-Gem aims to be as small as possible, comes with only HTTParty as a dependency
-and doesn't do anything else besides sending Emails. The latter is a feature.
+of them had a dependency on the rather bloated "Mail" library.
+
+This particular Gem aims to be as small as possible, comes with only HTTParty as
+a dependency and doesn't do anything else besides sending Emails. This means
+that if you're looking for a way to verify Emails or to get your send quota you
+should probably look somewhere else.
 
 ## Installation
 
@@ -33,6 +36,12 @@ Create a new instance of ``SES::Email``:
 And send it:
 
     email.deliver
+
+## Running Tests
+
+The tests are written using Bacon and can be executed as following:
+
+    $ bacon spec/ses/*.rb
 
 ## License
 
