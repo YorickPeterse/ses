@@ -5,7 +5,7 @@ namespace :build do
       File.expand_path('../../ses.gemspec', __FILE__)
     )
 
-    root = File.expand_path('../../../../', __FILE__)
+    root = File.expand_path('../../', __FILE__)
     name = "#{gemspec.name}-#{gemspec.version.version}.gem"
     path = File.join(root, name)
     pkg  = File.join(root, 'pkg', name)
